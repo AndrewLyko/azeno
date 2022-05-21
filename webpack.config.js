@@ -1,5 +1,5 @@
-const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     // Where files should be sent once they are bundled
@@ -9,7 +9,7 @@ module.exports = {
     },
     // webpack 5 comes with devServer which loads in development mode
     devServer: {
-        port: 3000,
+        port: 3000
         // watchContentBase: true
     },
     // Rules of how webpack will take our files, complie & bundle them for the browser
@@ -28,5 +28,8 @@ module.exports = {
             }
         ]
     },
-    plugins: [new HtmlWebpackPlugin({ template: './src/index.html' })],
-}
+    resolve: {
+        extensions: ['', '.js','.jsx']
+    },
+    plugins: [new HtmlWebpackPlugin({ template: './src/index.html' })]
+};
