@@ -3,20 +3,25 @@ import { Button, Card } from 'react-bootstrap';
 
 import './Question.scss';
 
-function Question({ question, answer }) {
+function Question({ question, answer, updateNextQuestion }) {
     const [toggle, setToggle] = useState(false);
 
     function handleFlip() {
         setToggle(true);
     }
 
-    function handleAnswer(event) {}
+    function handleAnswer(event) {
+        setToggle(false);
+        setTimeout(() => {
+            updateNextQuestion();
+        }, 200);
+    }
 
     return (
-        <div className={toggle ? 'flip-card active' : 'flip-card'} onClick={handleFlip}>
+        <div className={toggle ? 'flip-card active' : 'flip-card'}>
             <div className="flip-card-inner">
-                <div className="flip-card-front">
-                    <Card onClick={handleFlip}>
+                <div className="flip-card-front" onClick={handleFlip}>
+                    <Card>
                         <Card.Header>JavaScript</Card.Header>
                         <Card.Body className="card-body">
                             <Card.Text>{question}</Card.Text>
@@ -24,7 +29,7 @@ function Question({ question, answer }) {
                     </Card>
                 </div>
                 <div className="flip-card-back">
-                    <Card onClick={handleFlip}>
+                    <Card>
                         <Card.Header>JavaScript</Card.Header>
                         <Card.Body className="card-body">
                             <Card.Text>{answer}</Card.Text>
