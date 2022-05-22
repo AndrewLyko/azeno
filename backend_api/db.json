@@ -1,71 +1,71 @@
 {
-  "users": [
-    {
-      "id": 0,
-      "name": "Lech"
-    }
-  ],
-  "sets": [
-    {
-      "name": "Javascript",
-      "id": 1,
-      "level": "junior",
-      "quantity": 130,
-      "image": "js.png"
-    },
-    {
-      "name": "CSS",
-      "id": 2,
-      "level": "junior",
-      "quantity": 10,
-      "image": "css.png"
-    },
-    {
-      "name": "React",
-      "id": 3,
-      "level": "junior",
-      "quantity": 420,
-      "image": "react.png"
-    },
-    {
-      "name": "Webpack",
-      "id": 4,
-      "level": "mid",
-      "quantity": 99,
-      "image": "webpack.png"
-    }
-  ],
-  "decks": [
-    {
-      "id": 1
-    },
-    {
-      "id": 2
-    },
-    {
-      "id": 3
-    },
-    {
-      "id": 4
-    }
-  ],
-  "cards": [
-    {
-      "id": 1,
-      "name": "ala",
-      "category": 1
-    },
-    {
-      "id": 2,
-      "name": "ala"
-    },
-    {
-      "id": 3,
-      "name": "ala"
-    },
-    {
-      "id": 4,
-      "name": "ala"
-    }
-  ]
+    "users": [
+        {
+            "id": 0,
+            "name": "Lech"
+        }
+    ],
+    "sets": [
+        {
+            "name": "Javascript",
+            "id": 1,
+            "level": "junior",
+            "quantity": 130,
+            "image": "js.png"
+        },
+        {
+            "name": "CSS",
+            "id": 2,
+            "level": "junior",
+            "quantity": 10,
+            "image": "css.png"
+        },
+        {
+            "name": "React",
+            "id": 3,
+            "level": "junior",
+            "quantity": 420,
+            "image": "react.png"
+        },
+        {
+            "name": "Webpack",
+            "id": 4,
+            "level": "mid",
+            "quantity": 99,
+            "image": "webpack.png"
+        }
+    ],
+    "decks": [
+        {
+            "id": 1
+        },
+        {
+            "id": 2
+        },
+        {
+            "id": 3
+        },
+        {
+            "id": 4
+        }
+    ],
+    "cards": [
+        {
+            "id": 1,
+            "name": "ala",
+            "category": 1
+        },
+        {
+            "id": 2,
+            "name": "ala"
+        },
+        {
+            "id": 3,
+            "name": "ala"
+        },
+        {
+            "id": 4,
+            "name": "ala"
+        }
+    ]
 }

@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { Button, Card } from 'react-bootstrap';
 
+import './Question.scss';
+
 function Question() {
-    const [question] = useState('Czy w w JS wszystko jest obiektem?');
+    const [question] = useState('Czy w JS wszystko jest obiektem?');
     const [answer] = useState(
-        'Z technicznego punktu widzenia - nie. Typy proste są opakowywane obiekatmi'
+        'Z technicznego punktu widzenia: nie. Typy proste są opakowywane obiektami.'
     );
 
     const [toggle, setToggle] = useState(false);
@@ -14,20 +16,31 @@ function Question() {
     }
 
     return (
-        <Card onClick={handleAnswer}>
-            <Card.Header as="h5">Javascript</Card.Header>
-            <Card.Body>
-                <Card.Title></Card.Title>
-                <Card.Text>{!toggle ? question : answer}</Card.Text>
-                {toggle && (
-                    <div className="d-flex justify-content-between">
-                        <Button variant="primary"> Wiedziałem!</Button>
-                        <Button variant="primary"> Nie byłem pewny!</Button>
-                        <Button variant="primary"> NIe wiedziałem!</Button>
-                    </div>
-                )}
-            </Card.Body>
-        </Card>
+        <div className={toggle ? 'flip-card active' : 'flip-card'} onClick={handleAnswer}>
+            <div className="flip-card-inner">
+                <div className="flip-card-front">
+                    <Card onClick={handleAnswer}>
+                        <Card.Header>JavaScript</Card.Header>
+                        <Card.Body className="card-body">
+                            <Card.Text>{question}</Card.Text>
+                        </Card.Body>
+                    </Card>
+                </div>
+                <div className="flip-card-back">
+                    <Card onClick={handleAnswer}>
+                        <Card.Header>JavaScript</Card.Header>
+                        <Card.Body className="card-body">
+                            <Card.Text>{answer}</Card.Text>
+                            <div className="answer-btn">
+                                <Button variant="primary">Wiedziałem</Button>
+                                <Button variant="primary">Nie byłem pewny</Button>
+                                <Button variant="primary">Nie wiedziałem</Button>
+                            </div>
+                        </Card.Body>
+                    </Card>
+                </div>
+            </div>
+        </div>
     );
 }
 

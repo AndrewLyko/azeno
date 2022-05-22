@@ -1,2 +1,22 @@
-{"/Users/andriylyko/projects/js-ultimate/azeno/src/components/App/App.jsx": {"path":"/Users/andriylyko/projects/js-ultimate/azeno/src/components/App/App.jsx","statementMap":{"0":{"start":{"line":8,"column":4},"end":{"line":13,"column":6}}},"fnMap":{"0":{"name":"App","decl":{"start":{"line":7,"column":9},"end":{"line":7,"column":12}},"loc":{"start":{"line":7,"column":15},"end":{"line":14,"column":1}},"line":7}},"branchMap":{},"s":{"0":1},"f":{"0":1},"b":{},"_coverageSchema":"1a1c01bbd47fc00a2c39e90264f33305004495a9","hash":"22f6916d8e42d8bdbfdd95e81098796ee6f713ac"}
+{
+    "/Users/andriylyko/projects/js-ultimate/azeno/src/components/App/App.jsx": {
+        "path": "/Users/andriylyko/projects/js-ultimate/azeno/src/components/App/App.jsx",
+        "statementMap": {
+            "0": { "start": { "line": 8, "column": 4 }, "end": { "line": 13, "column": 6 } }
+        },
+        "fnMap": {
+            "0": {
+                "name": "App",
+                "decl": { "start": { "line": 7, "column": 9 }, "end": { "line": 7, "column": 12 } },
+                "loc": { "start": { "line": 7, "column": 15 }, "end": { "line": 14, "column": 1 } },
+                "line": 7
+            }
+        },
+        "branchMap": {},
+        "s": { "0": 1 },
+        "f": { "0": 1 },
+        "b": {},
+        "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+        "hash": "22f6916d8e42d8bdbfdd95e81098796ee6f713ac"
+    }
 }
