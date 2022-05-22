@@ -34,5 +34,38 @@
       "quantity": 99,
       "image": "webpack.png"
     }
+  ],
+  "decks": [
+    {
+      "id": 1
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    }
+  ],
+  "cards": [
+    {
+      "id": 1,
+      "name": "ala",
+      "category": 1
+    },
+    {
+      "id": 2,
+      "name": "ala"
+    },
+    {
+      "id": 3,
+      "name": "ala"
+    },
+    {
+      "id": 4,
+      "name": "ala"
+    }
   ]
 }
