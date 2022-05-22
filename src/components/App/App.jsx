@@ -5,7 +5,11 @@ import './App.scss';
 import Header from '../Header/Header';
 
 import useCookie from '../../hooks/useCookie';
-import CookieWrapper from '../CookieWrapper/CookieWrapper';
+import Train from '../Train/Train';
+import Profile from '../Profile/Profile';
+import Login from '../Auth/Login';
+import Register from '../Auth/Register';
+import { Col, Container, Row } from 'react-bootstrap';
 
 function App() {
     const [cookie, setCookie] = useCookie('token_auth');
@@ -13,7 +17,19 @@ function App() {
     return (
         <BrowserRouter>
             <Header />
-            <CookieWrapper cookies={cookie} setCookies={setCookie} />
+            <Container>
+                <Row>
+                    <Col>
+                        <Routes>
+                            <Route path="/" element={<Link to="/profile">Profile</Link>} />
+                            <Route path="/profile" element={<Profile />} />
+                            <Route path="/train" element={<Train />} />
+                            <Route path="/login" element={<Login />} />
+                            <Route path="/register" element={<Register />} />
+                        </Routes>
+                    </Col>
+                </Row>
+            </Container>
         </BrowserRouter>
     );
 }
