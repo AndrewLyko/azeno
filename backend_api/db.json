@@ -52,20 +52,24 @@
     "cards": [
         {
             "id": 1,
-            "name": "ala",
-            "category": 1
+            "category": 1,
+            "question": "Jak cos tam cos tam?",
+            "answer": "Tak i tak"
         },
         {
             "id": 2,
-            "name": "ala"
+            "category": 1,
+            "question": "Czym roznią się let i const?",
+            "answer": "Const jest niemodyfikowalny"
         },
         {
             "id": 3,
-            "name": "ala"
+            "question": "Czy contextAPI służy do trzymania stanu w komponencie?",
+            "answer": "Do trzymania stanu komponentu uzywamy hooks lub this.state"
         },
         {
             "id": 4,
-            "name": "ala"
+            "category": 1
         }
     ]
 }
