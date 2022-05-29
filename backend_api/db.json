@@ -1,75 +1,82 @@
 {
-    "users": [
-        {
-            "id": 0,
-            "name": "Lech"
-        }
-    ],
-    "sets": [
-        {
-            "name": "Javascript",
-            "id": 1,
-            "level": "junior",
-            "quantity": 130,
-            "image": "js.png"
-        },
-        {
-            "name": "CSS",
-            "id": 2,
-            "level": "junior",
-            "quantity": 10,
-            "image": "css.png"
-        },
-        {
-            "name": "React",
-            "id": 3,
-            "level": "junior",
-            "quantity": 420,
-            "image": "react.png"
-        },
-        {
-            "name": "Webpack",
-            "id": 4,
-            "level": "mid",
-            "quantity": 99,
-            "image": "webpack.png"
-        }
-    ],
-    "decks": [
-        {
-            "id": 1
-        },
-        {
-            "id": 2
-        },
-        {
-            "id": 3
-        },
-        {
-            "id": 4
-        }
-    ],
-    "cards": [
-        {
-            "id": 1,
-            "category": 1,
-            "question": "Jak cos tam cos tam?",
-            "answer": "Tak i tak"
-        },
-        {
-            "id": 2,
-            "category": 1,
-            "question": "Czym roznią się let i const?",
-            "answer": "Const jest niemodyfikowalny"
-        },
-        {
-            "id": 3,
-            "question": "Czy contextAPI służy do trzymania stanu w komponencie?",
-            "answer": "Do trzymania stanu komponentu uzywamy hooks lub this.state"
-        },
-        {
-            "id": 4,
-            "category": 1
-        }
-    ]
+  "users": [
+    {
+      "id": 0,
+      "name": "Lech"
+    }
+  ],
+  "sets": [
+    {
+      "name": "Javascript",
+      "id": 1,
+      "level": "junior",
+      "quantity": 130,
+      "image": "js.png"
+    },
+    {
+      "name": "CSS",
+      "id": 2,
+      "level": "junior",
+      "quantity": 10,
+      "image": "css.png"
+    },
+    {
+      "name": "React",
+      "id": 3,
+      "level": "junior",
+      "quantity": 420,
+      "image": "react.png"
+    },
+    {
+      "name": "Webpack",
+      "id": 4,
+      "level": "mid",
+      "quantity": 99,
+      "image": "webpack.png"
+    }
+  ],
+  "decks": [
+    {
+      "id": 1
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    }
+  ],
+  "cards": [
+    {
+      "id": 1,
+      "category": 1,
+      "question": "Jak cos tam cos tam 1?",
+      "answer": "Tak i tak",
+      "answerdate": 1655062031795
+    },
+    {
+      "id": 2,
+      "category": 1,
+      "question": "Jak cos tam cos tam 2?",
+      "answer": "Tak i tak",
+      "answerdate": 1654112090295
+    },
+    {
+      "id": 3,
+      "category": 1,
+      "question": "Jak cos tam cos tam 3?",
+      "answer": "Tak i tak",
+      "answerdate": 1655062488612
+    },
+    {
+      "id": 4,
+      "category": 1,
+      "question": "Jak cos tam cos tam 4?",
+      "answer": "Tak i tak",
+      "answerdate": 1655061402366
+    }
+  ]
 }

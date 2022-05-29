@@ -36,12 +36,16 @@ function QuestionList() {
         <div>
             {!question ? (
                 <h2>Loading..</h2>
-            ) : (
+            ) : question.answerdate <= Date.parse(new Date()) ? (
                 <Question
+                    id={question.id}
+                    category={question.category}
                     question={question.question}
                     answer={question.answer}
                     updateNextQuestion={updateNextQuestion}
                 />
+            ) : (
+                <h2>Paweł, jestem programistę, dej 20k</h2>
             )}
         </div>
     );

@@ -27,6 +27,7 @@
     },
     "homepage": "https://github.com/AndrewLyko/azeno#readme",
     "dependencies": {
+        "axios": "^0.27.2",
         "bootstrap": "^5.1.3",
         "cypress": "^9.6.1",
         "react": "^18.1.0",
